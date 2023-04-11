@@ -23,6 +23,7 @@
 	<%@ include file="../topBar/topBar.jsp" %>
 	
 	<div>
+		<a href="../home/main">홈</a>
 		<a href="write">글쓰기</a>
 	</div>
 	

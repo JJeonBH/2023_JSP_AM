@@ -54,7 +54,7 @@
 	
 	<form action="doJoin" method="POST" onsubmit="joinFormSubmit(this); return false;">
 		<div>
-			로그인 아이디 : <input type="text" name="loginId" placeholder="아이디를 입력해주세요" />
+			로그인 아이디 : <input type="text" name="loginId" placeholder="아이디를 입력해주세요" autocomplete="off"/>
 		</div>
 		<div>
 			로그인 비밀번호 : <input type="password" name="loginPw" placeholder="비밀번호를 입력해주세요" />
@@ -63,7 +63,7 @@
 			로그인 비밀번호 확인 : <input type="password" name="loginPwChk" placeholder="비밀번호 확인을 입력해주세요" />
 		</div>
 		<div>
-			이름 : <input type="text" name="name" placeholder="이름을 입력해주세요" />
+			이름 : <input type="text" name="name" placeholder="이름을 입력해주세요" autocomplete="off"/>
 		</div>
 		
 		<div>

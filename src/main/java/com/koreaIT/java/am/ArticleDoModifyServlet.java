@@ -41,6 +41,12 @@ public class ArticleDoModifyServlet extends HttpServlet {
 			
 			Map<String, Object> articleRow = DBUtil.selectRow(conn, sql);
 			
+			if(articleRow.isEmpty()) {
+				response.setContentType("text/html; charset=UTF-8;");
+				response.getWriter().append(String.format("<script>alert('%d번 게시물은 존재하지 않습니다'); location.replace('list');</script>", id));
+				return;
+			}
+			
 			HttpSession session = request.getSession();
 			
 			int loginedMemberId = -1;
